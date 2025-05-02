@@ -13,7 +13,7 @@
         @if (request()->is('login') || request()->is('register'))
             <link rel="stylesheet" href="{{ mix('css/app.css') }}">
         @else
-            <link rel="stylesheet" href="{{ mix('css/app.scss') }}">
+            <link rel="stylesheet" href="{{ mix('css/app.css') }}">
         @endif
 
         <!-- Scripts -->

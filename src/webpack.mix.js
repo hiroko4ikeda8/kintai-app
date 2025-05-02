@@ -12,4 +12,10 @@ const mix = require('laravel-mix');
  */
 
 mix.js('resources/js/app.js', 'public/js')
-    .sass('resources/css/app.scss', 'public/css'); // postCssからsassに変更
+    .sass('resources/css/app.scss', 'public/css') // SCSSをCSSに変換
+    .options({
+        postCss: [require('tailwindcss')] // Tailwindを適用
+    })
+    .version(); // キャッシュ管理
+
+

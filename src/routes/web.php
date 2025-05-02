@@ -22,3 +22,11 @@ Route::get('/dashboard', function () {
 })->middleware(['auth'])->name('dashboard');
 
 require __DIR__.'/auth.php';
+
+// Route::get('/attendance', function () {
+//     return view('attendance');
+// })->middleware(['auth'])->name('attendance');  // 後で認証を有効化するときに再利用可能
+
+Route::get('/attendance', function () {
+    return view('staff.attendance-staff');
+})->name('attendance');
