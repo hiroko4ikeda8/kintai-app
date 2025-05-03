@@ -1,2 +1,24 @@
 docker/mysql/data/*
+
+# Laravel のディレクトリやファイル
+/vendor
+/node_modules
+/public/storage
+/storage/*.key
+.env
+.env.testing
+
+# IDEの設定ファイル
+.vscode
+.idea
+
+# OSによるファイル
+.DS_Store
+Thumbs.db
+
+# その他
+*.log
+*.sql
+*.sqlite
+
 !.gitkeep
