@@ -21,4 +21,7 @@ Thumbs.db
 *.sql
 *.sqlite
 
+backup_kintai_app.tar.gz
+backup.sql
+
 !.gitkeep
