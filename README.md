@@ -14,12 +14,12 @@
 ## 環境情報
 - **OS**: Windows 11  
 - **WSL**: WSL2  
-- **Docker**: 27.5.1  
-- **Docker Compose**: 2.32.4-desktop.1 
+- **Docker**: 28.1.1  
+- **Docker Compose**: v2.35.1-desktop.1
 - **PHP**: 7.4.9 
-- **Composer**: 2.2.6  
+- **Composer**: 2.8.8  
 - **MySQL**: 8.0.26  
-- **Laravel Framework**: 8.83.29
+- **Laravel Framework**: 8.83.8
 
 ## 2. 開発用ディレクトリの作成
 プロジェクトの作業ディレクトリを作成し、そこへ移動します。
@@ -93,17 +93,24 @@ php artisan migrate
 php artisan db:seed
 ```
 
-
 ## 10. 開発環境の確認
 セットアップが完了したら、Laravelのサーバーを起動し、正しく動作するか確認します。
 
 ブラウザで `http://localhost` にアクセスし、Laravelの初期画面が表示されれば成功です。
 
+## 11. 開発環境構築後の注意点
 
-## 11. Bootstrapの設定
+初期構築後、以下のパーミッションエラーが発生する場合があります：
+
+- storage/logs/laravel.log に書き込みできない
+- storage/framework/sessions にセッションファイルを作成できない
+
+詳細な手順については、[docs/setup-permissions.md](./docs/setup-permissions.md)を参照してください。
+
+## 12. Bootstrapの設定
 Bootstrapを使ってレスポンシブデザインを効率化するためのセットアップ手順については、[bootstrap-setup.md](./docs/bootstrap-setup.md) を参照してください。
 
-## 12. フロントエンド環境のセットアップ
+## 13. フロントエンド環境のセットアップ
 npm（Node.js）でフロントエンドのパッケージをインストール
 
 npmの依存関係をインストール
@@ -151,4 +158,4 @@ php artisan storage:link
 
 これで開発環境のセットアップは完了です。
 
-![ER Diagram](docs/FM-APP.png)
+![ER Diagram](docs/FM-APP.png)←まだer図未作成のため修正予定
