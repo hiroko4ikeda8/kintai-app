@@ -1,3 +1,5 @@
-<header class="text-center py-4 bg-gray-100 shadow-md">
-    <img src="/path/to/logo.png" alt="Logo" class="h-12 w-auto mx-auto">
+<header class="bg-black p-4">
+    <div class="max-w-7xl mx-auto flex justify-center">
+        <img src="/images/logo.png" alt="Logo" class="h-12">
+    </div>
 </header>

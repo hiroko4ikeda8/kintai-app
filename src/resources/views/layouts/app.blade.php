@@ -10,18 +10,14 @@
         <!-- Fonts -->
         <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap">
 
-        @if (request()->is('login') || request()->is('register'))
-            <link rel="stylesheet" href="{{ mix('css/app.css') }}">
-        @else
-            <link rel="stylesheet" href="{{ mix('css/app.css') }}">
-        @endif
+        <link rel="stylesheet" href="{{ mix('css/app.css') }}">
 
         <!-- Scripts -->
         <script src="{{ mix('js/app.js') }}" defer></script>
     </head>
     <body class="font-sans antialiased">
         <div class="min-h-screen bg-gray-100">
-            @include('layouts.navigation'
+            @include('layouts.navigation')
 
             <!-- Page Heading -->
             <header class="bg-white shadow">
