@@ -1,7 +1,7 @@
-<header class="navbar navbar-expand-lg navbar-dark bg-dark">
-    <div class="container px-4">
+<header class="navbar navbar-expand-lg navbar-dark bg-dark py-3">
+    <div class="container px-4 ps-0">
         <a class="navbar-brand" href="/">
-            <img src="/images/logo.png" alt="ロゴ" style="height: 40px;">
+            <img src="/images/logo.png" alt="ロゴ" style="height: 40px; padding-top: 2px; padding-bottom: 2px;">
         </a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
             <span class="navbar-toggler-icon"></span>

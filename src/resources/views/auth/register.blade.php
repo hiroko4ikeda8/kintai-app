@@ -1,7 +1,6 @@
 <x-guest-layout>
     <x-auth-card>
         @include('layouts.partials.header-auth-tailwind')
-
         <!-- Validation Errors -->
         <x-auth-validation-errors class="mb-4" :errors="$errors" />
 

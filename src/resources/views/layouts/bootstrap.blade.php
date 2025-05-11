@@ -10,6 +10,8 @@
     <style>
         body {
         font-family: 'Inter', sans-serif;
+        margin-left: 1.5rem;
+        margin-right: 1.5rem;
         }
         /* 追加でベースとなるPC用レイアウト */
         .grid-3 {
