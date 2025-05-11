@@ -24,4 +24,6 @@ Thumbs.db
 backup_kintai_app.tar.gz
 backup.sql
 
+*.Zone.Identifier
+
 !.gitkeep

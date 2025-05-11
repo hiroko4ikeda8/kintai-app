@@ -6,11 +6,10 @@
         <meta name="csrf-token" content="{{ csrf_token() }}">
 
         <title>{{ config('app.name', 'Laravel') }}</title>
-
         <!-- Fonts -->
         <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap">
 
-        @if (request()->is('login') || request()->is('register'))
+        @if (request()->is('login') || request()->is('register')) <!-- ここから５行分修正範囲
             <link rel="stylesheet" href="{{ mix('css/app.css') }}">
         @else
             <link rel="stylesheet" href="{{ mix('css/app.css') }}">
