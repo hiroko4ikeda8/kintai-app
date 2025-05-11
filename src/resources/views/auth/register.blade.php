@@ -1,12 +1,15 @@
 <x-guest-layout>
-    <x-auth-card>
-        @include('layouts.partials.header-auth-tailwind')
+    @include('layouts.partials.header-auth-tailwind')
+    <!-- <x-auth-card> -->
+        <div class="min-h-screen flex items-center justify-center bg-gray-100">
+            <div class="w-full max-w-md bg-white shadow-md rounded-lg p-6 mx-auto">
+
+
         <!-- Validation Errors -->
         <x-auth-validation-errors class="mb-4" :errors="$errors" />
 
         <form method="POST" action="{{ route('register') }}">
             @csrf
-
             <!-- Name -->
             <div>
                 <x-label for="name" :value="__('Name')" />
@@ -50,5 +53,5 @@
                 </x-button>
             </div>
         </form>
-    </x-auth-card>
+    <!-- </x-auth-card> -->
 </x-guest-layout>
