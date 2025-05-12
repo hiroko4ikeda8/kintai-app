@@ -27,7 +27,7 @@
             </header>
 
             <!-- Page Content -->
-            <main>x^
+            <main>
             </main>
         </div>
     </body>
